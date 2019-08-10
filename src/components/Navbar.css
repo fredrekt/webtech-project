@@ -1,0 +1,16 @@
+
+#brand-name{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Anton', sans-serif;
+}
+*{
+    font-family: 'Blinker', sans-serif;
+}
+#navbar-black{
+    background-color: black;
+}
+#white-txt{
+    color: white;
+}

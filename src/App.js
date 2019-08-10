@@ -1,13 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Menu from './components/Navbar'
+import Banner from './components/Carousel'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <Menu/>
+      <Banner/>
     </div>
   );
 }
