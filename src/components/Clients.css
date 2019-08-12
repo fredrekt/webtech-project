@@ -1,0 +1,35 @@
+.client-txt{
+    text-align: center;
+    text-transform: uppercase;
+    text-align:center;
+    font-family: Changa, sans-serif;
+    font-size: 60px;
+    letter-spacing: 0.02em;
+}
+.client-img{
+    width:220px;
+    height: 250px;
+    border-radius: 5px;
+}
+.client-img-ph{
+    width:220px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+.client-name{
+    font-size: 21px;
+    margin-top:5%;
+    font-family: Changa, sans-serif;   
+}
+.client-sub{
+    color: gray;
+    font-size: 15px;
+    /* margin-bottom: 40%; */
+    margin-top: -4%;
+}
+.client-url{
+    font-size: 15px;
+    margin-top: -2%;
+    margin-bottom: 40%;
+}
