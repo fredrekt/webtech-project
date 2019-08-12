@@ -3,22 +3,22 @@ import './Carousel.css'
 import Carousel from 'react-bootstrap/Carousel'
 import banner2 from '/Users/Acer/Desktop/webtech-project/src/img/nike-shoes.jpg'
 import finalbanner from '/Users/Acer/Desktop/webtech-project/src/img/banner1-final.png'
-import banner3 from '/users/acer/Desktop/webtech-project/src/img/nike-shoes-3.jpg'
+import banner3 from '/Users/acer/Desktop/webtech-project/src/img/nike-shoes-3.jpg'
 const Banner = () =>{
     return(
         <Carousel>
-  <Carousel.Item>
+  <Carousel.Item className="carousel-height">
     <img
       className="d-block w-100"
       src={finalbanner}
       alt="First slide"
     />
-    <Carousel.Caption style={{"text-align":"right", "margin-bottom":"700px"}}>
-      <h3 style={{"text-transform":"uppercase","font-size":"80px","font-style":"bold"}}>shoe shack</h3>
-      <p>A place to buy shit and sell them online and dont give a shit</p>
+    <Carousel.Caption style={{"text-align":"right", "margin-bottom":"500px"}}>
+      <h3 style={{"text-transform":"uppercase","font-size":"60px","font-style":"bold","font-family":'Changa, sans-serif'}}>shoe shack</h3>
+      <p style={{"font-size":"20px", "margin-top":"-20px"}}>Choose Shoes. Buy Shoes. Get Shoes.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item className="carousel-height">
     <img
       className="d-block w-100"
       src={banner2}
@@ -26,19 +26,19 @@ const Banner = () =>{
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3 style={{"font-family":"Changa, sans-serif","text-transform": "uppercase","font-size":"40px"}}>Nike Kaishi Sports</h3>
+      <p style={{"font-size":"20px","margin-top":"-20px"}}>Made by Athletes, for athletes</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item className="carousel-height">
     <img
       className="d-block w-100"
       src={banner3}
       alt="Third slide"
     />
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    <Carousel.Caption className="align-top-left">
+      <h3 style={{'text-transform':'uppercase', 'font-family':'Changa, sans-serif','font-size':'40px'}}>Third slide label</h3>
+      <p style={{'font-size':'20px','margin-top':'-15px'}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

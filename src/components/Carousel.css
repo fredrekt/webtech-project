@@ -1,3 +1,7 @@
-#height-control{
-    height: 800px;
+.carousel-height{
+    height: 724px;
+}
+.align-top-left{
+    text-align: left;
+    margin-bottom: 500px;
 }
