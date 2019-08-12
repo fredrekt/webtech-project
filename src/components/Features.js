@@ -27,10 +27,10 @@ const Features = () =>{
                 </Col>
             </Row>
             <Row>
-                <Col>Database Oriented</Col>
-                <Col>Data Security</Col>
-                <Col>Cart System</Col>
-                <Col>Dynamic Web App</Col>
+                <Col className="feature-name">Database Oriented</Col>
+                <Col className="feature-name">Data Security</Col>
+                <Col className="feature-name">Cart System</Col>
+                <Col className="feature-name">Dynamic Web App</Col>
             </Row>
             <Row style={{'margin-bottom':'5%'}}>
                 <Container>
