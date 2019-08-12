@@ -1,0 +1,12 @@
+.header-txt{
+    font-family: Changa, sans-serif;
+    font-size: 60px;
+    text-align: left;
+    color:whitesmoke;
+}
+.form-label{
+    color:whitesmoke;
+}
+.form-input{
+    width:40%;
+}
