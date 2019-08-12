@@ -1,0 +1,10 @@
+.jumbotron-header{
+    font-family: Changa, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 2%;
+}
+.jumbotron-content{
+    text-justify: auto;
+}
