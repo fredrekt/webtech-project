@@ -14,3 +14,12 @@
     justify-content: center;
     display:none;
 }
+.button-indent{
+    margin-left: 47%;
+    margin-top: 1%;
+}
+@media only screen and (max-width:600px){
+    .button-indent{
+      margin-left: 40%;
+    }
+}
