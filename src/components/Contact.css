@@ -8,5 +8,11 @@
     color:whitesmoke;
 }
 .form-input{
-    width:40%;
+    width:100%;
+}
+.bg-black{
+    background-color: black;
+}
+.contact-img{
+    margin-left: 15%;
 }
