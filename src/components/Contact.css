@@ -16,3 +16,9 @@
 .contact-img{
     margin-left: 15%;
 }
+@media only screen and (max-width:600px){
+    .contact-img{
+        margin-left:13%;
+        width: 400px;
+    }
+}
