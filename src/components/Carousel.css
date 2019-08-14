@@ -7,6 +7,9 @@
 }
 @media only screen and (max-width:600px){
     .carousel-height{
-        height:inherit;
+        height: 250px;
+    }
+    .align-top-left{
+        margin-bottom:auto;
     }
 }
