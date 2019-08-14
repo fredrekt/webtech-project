@@ -6,5 +6,11 @@
     margin-bottom: 2%;
 }
 .jumbotron-content{
-    text-justify: auto;
+    text-indent: 2em;
+    justify-content: center;
+}
+.jumbotron-content-hidden{
+    text-indent: 2em;
+    justify-content: center;
+    display:none;
 }
