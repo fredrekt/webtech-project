@@ -1,7 +1,12 @@
 .carousel-height{
-    height: 724px;
+    height: 800px;
 }
 .align-top-left{
     text-align: left;
     margin-bottom: 500px;
+}
+@media only screen and (max-width:600px){
+    .carousel-height{
+        height:inherit;
+    }
 }
