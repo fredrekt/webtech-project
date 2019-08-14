@@ -33,3 +33,12 @@
     margin-top: -2%;
     margin-bottom: 40%;
 }
+@media only screen and (max-width:600px){
+    .client-sub{
+        margin-top:-2%;
+    }
+    .client-url{
+        margin-top:-1%;
+        margin-bottom:10%;
+    }
+}
