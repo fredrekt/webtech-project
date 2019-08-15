@@ -17,11 +17,10 @@ function App() {
       <Features/>
       <Contact/>
       <Clients />
-      {
-        /*
-          redirectory after modal login
-        */
-      }
+
+      {/*
+        commented 50% done - add containers for the items (shoes)
+      */}
       {/* <Shop/> */}
 
 
