@@ -14,3 +14,14 @@
 #white-txt{
     color: white;
 }
+
+/* Modal Login  */
+.modal-title{
+    text-align: center;
+}
+#username{
+    padding: 20px;
+}
+#password{
+
+}
