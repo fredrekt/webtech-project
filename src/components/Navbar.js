@@ -23,9 +23,9 @@ const Menu = () =>{
         </Modal.Header>
         <Modal.Body>
             <Form>
-                <input id="username" name="username" placeholder="Enter Username" className="form-control mb-2"/>
-                <input id="password" name="password" placeholder="Enter Password" className="form-control mb-2"/>
-                <a href="#register">New to Shoe Shack? Tap me</a>
+                <input type="text" id="username" name="username" placeholder="Enter Username" className="form-control mb-2"/>
+                <input type="text" id="password" name="password" placeholder="Enter Password" className="form-control mb-2"/>
+                <a className="modal-form-url" href="#register">New to Shoe Shack? Tap me</a>
             </Form>
 
 
