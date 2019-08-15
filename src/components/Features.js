@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './Features.css'
-import db from '/Users/Acer/Desktop/webtech-project/src/img/db-icon.png'
-import build from '/Users/acer/Desktop/webtech-project/src/img/build.png'
-import secure from '/users/acer/Desktop/webtech-project/src/img/security.jpg'
-import cart from '/users/Acer/Desktop/webtech-project/src/img/shop.png'
+import db from '../img/db-icon.png'
+import build from '../img/build.png'
+import secure from '../img/security.jpg'
+import cart from '../img/shop.png'
 
 
 class Features extends Component{

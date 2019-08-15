@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import './Contact.css'
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import mime from '/users/acer/Desktop/webtech-project/src/img/mime.jpg'
+import mime from '../img/mime.jpg'
 const Contact = () =>{
     return(
     <Container fluid>

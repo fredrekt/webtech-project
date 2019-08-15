@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import slide1 from '/users/acer/Desktop/webtech-project/src/img/shop-items/carousel-img-1.jpg'
-import slide2 from '/users/acer/Desktop/webtech-project/src/img/shop-items/car-img-2.jpg'
-import slide3 from '/users/acer/Desktop/webtech-project/src/img/shop-items/banner-last.jpg'
+import slide1 from '../img/shop-items/carousel-img-1.jpg'
+import slide2 from '../img/shop-items/car-img-2.jpg'
+import slide3 from '../img/shop-items/banner-last.jpg'
 import './Shop.css'
 
 class Shop extends Component{
