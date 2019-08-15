@@ -6,6 +6,7 @@ import Features from './components/Features'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Clients from './components/Clients'
+import Shop from './components/Shop'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Features/>
       <Contact/>
       <Clients />
+      <Shop/>
 
 
 
