@@ -17,7 +17,12 @@ function App() {
       <Features/>
       <Contact/>
       <Clients />
-      <Shop/>
+      {
+        /*
+          redirectory after modal login
+        */
+      }
+      {/* <Shop/> */}
 
 
 
