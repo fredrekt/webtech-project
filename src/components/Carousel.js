@@ -1,9 +1,9 @@
 import React from 'react'
 import './Carousel.css'
 import Carousel from 'react-bootstrap/Carousel'
-import banner2 from '/Users/Acer/Desktop/webtech-project/src/img/nike-shoes.jpg'
-import finalbanner from '/Users/Acer/Desktop/webtech-project/src/img/banner1-final.png'
-import banner3 from '/Users/acer/Desktop/webtech-project/src/img/nikeshoes.png'
+import banner2 from '../img/nike-shoes.jpg'
+import finalbanner from '../img/banner1-final.png'
+import banner3 from '../img/nikeshoes.png'
 const Banner = () =>{
     return(
         <Carousel>
