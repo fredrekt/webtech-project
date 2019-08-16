@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import './Clients.css'
-import patrick from  '/users/Acer/Desktop/webtech-project/src/img/client-1.jpg'
-import citu from '/users/Acer/Desktop/webtech-project/src/img/cit-logo.jpg'
-import burger from '/users/Acer/Desktop/webtech-project/src/img/burger-joint.jpg'
-import ph from '/users/Acer/Desktop/webtech-project/src/img/ph-logo.png'
+import patrick from  '../img/client-1.jpg'
+import citu from '../img/cit-logo.jpg'
+import burger from '../img/burger-joint.jpg'
+import ph from '../img/ph-logo.png'
 
 const Clients = () =>{
     return(
