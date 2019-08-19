@@ -68,7 +68,7 @@ class Register extends Component{
 
                     {/* <Button onClick={readyRegister}>Ready</Button> */}
 
-                    <Button variant="primary" type="submit">
+                    <Button variant="dark" type="submit">
                         Create Account
                     </Button>
                     </Form>
