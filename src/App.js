@@ -7,11 +7,26 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Clients from './components/Clients'
 import Shop from './components/Shop'
+import About from './components/About'
+import Team from './components/Team'
+import HoursRendered from './components/HoursRendered'
 
 function App() {
   return (
     <div className="App">
       <Menu/>
+       {/* About Section Starts here
+      Add to browser router - /About */}
+
+
+      {/* <About/>
+      <Team/>
+      <HoursRendered/> */}
+
+
+      {/* About Section Ends here */}
+     
+
       <Banner/>
       <Content/>
       <Features/>
