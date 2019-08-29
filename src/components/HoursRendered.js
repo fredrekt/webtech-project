@@ -72,7 +72,7 @@ class HoursRendered extends Component {
                                         </Popover>
                                     }
                                     >
-                            <h3 className="sub-clock-txt">15 hours rendered</h3>
+                            <h3 className="sub-clock-txt">19 hours rendered</h3>
                         </OverlayTrigger>
                  </Container>
             </Jumbotron>
