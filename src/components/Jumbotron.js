@@ -4,6 +4,9 @@ import Button from 'react-bootstrap/Button'
 import './Jumbotron.css'
 import React, {useState} from 'react'
 import Collapse from 'react-bootstrap/Collapse'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Popover from 'react-bootstrap/Popover'
+
 
 
 
@@ -14,7 +17,21 @@ const Jumbo = () => {
       const [open, setOpen] = useState(false)
         return( 
             <Jumbotron>
-            <h1 className="jumbotron-header">What is Shoe Shack?</h1>
+              <OverlayTrigger
+                key='top'
+                placement='top'
+                overlay={
+                   <Popover id={`popover-positioned-$placement`}>
+                                    <Popover.Title as="h3"></Popover.Title>
+                                    <Popover.Content>
+                                        <strong>What are we about?</strong>
+                                    </Popover.Content>
+                                    </Popover>
+                }
+              >
+                      <h1 className="jumbotron-header">What is Shoe Shack?</h1>
+              </OverlayTrigger>
+            
             <p className="jumbotron-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque in ante ac sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean blandit ullamcorper erat, ac egestas nulla imperdiet et. Phasellus vel interdum nibh. Quisque venenatis magna urna, eget mollis orci ornare vehicula. Vivamus eu nulla eget dui sollicitudin cursus ac nec ante. Phasellus vitae ultrices nulla, sit amet sodales mauris. Vivamus elementum eleifend iaculis. Phasellus suscipit egestas tortor, id aliquam risus consectetur sit amet.
     
