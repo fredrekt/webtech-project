@@ -43,7 +43,20 @@ class Features extends Component{
     render(){
         return(
             <Container>
+            <OverlayTrigger
+                    key='top'
+                    placement='top'
+                    overlay={
+                    <Popover id={`popover-positioned-$placement`}>
+                                        <Popover.Title as="h3"></Popover.Title>
+                                        <Popover.Content>
+                                            <strong>Our Application's Features</strong>
+                                        </Popover.Content>
+                                        </Popover>
+                    }
+                >
                 <h1 style={{'text-align':'center','margin-bottom':'3%','color':'black'}} className="header-txt">Features</h1>
+                </OverlayTrigger>
                 <Row>
                     <OverlayTrigger
                     key='top'
