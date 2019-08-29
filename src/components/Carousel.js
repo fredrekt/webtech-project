@@ -16,6 +16,20 @@ const Banner = () =>{
     <Carousel.Caption style={{'top':'0','bottom':'auto','left':'auto'}}>
       <h3 style={{"text-transform":"uppercase","font-size":"60px","font-style":"bold","font-family":'Changa, sans-serif'}}>shoe shack</h3>
       <p style={{"font-size":"20px", "margin-top":"-20px"}}>Choose Shoes. Buy Shoes. Get Shoes.</p>
+      <p style={{"font-size":"15px", "margin-top":"-20px"}}>The Nike Jones Twice Apex Legends Underlord</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item className="carousel-height">
+    <img
+      
+      className="d-block w-100"
+      src={banner2}
+      alt="Third slide"
+    />
+    <Carousel.Caption className="align-top-left">
+      <h3 style={{'text-transform':'uppercase', 'font-family':'Changa, sans-serif','font-size':'40px'}}>Third slide label</h3>
+      <p style={{'font-size':'20px','margin-top':'-15px'}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <p style={{'font-size':'15px','margin-top':'-17px'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu purus nec <br/>risus consectetur tempus vel sed quam. Cras pulvinar leo ac lacinia ultrices. Mauris <br/>vel metus at dui condimentum gravida ut in nisi. VivaVivamus pulvinar accumsan hendrerit.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item className="carousel-height">
@@ -30,18 +44,7 @@ const Banner = () =>{
       <p style={{"font-size":"20px","margin-top":"-20px"}}>Made by Athletes, for athletes</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item className="carousel-height">
-    <img
-      
-      className="d-block w-100"
-      src={banner2}
-      alt="Third slide"
-    />
-    <Carousel.Caption className="align-top-left">
-      <h3 style={{'text-transform':'uppercase', 'font-family':'Changa, sans-serif','font-size':'40px'}}>Third slide label</h3>
-      <p style={{'font-size':'20px','margin-top':'-15px'}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
+  
 </Carousel>
     )
 }
