@@ -16,3 +16,26 @@
 }
 
 /* Modal Login  */
+
+
+/* ProjectTools Component */
+.asd{
+    width: 200px;
+    height: 50px;
+}
+.container-mt-3{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.dev-tools-1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.dev-tools-2{
+    text-align: center;
+    margin-top: 10%;
+}
+.img-tools-2{
+    width: 40%;
+    height: 100%;
+}

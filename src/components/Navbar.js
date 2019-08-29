@@ -5,21 +5,29 @@ import './Navbar.css'
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import Form from 'react-bootstrap/Form'
+import AboutComponent from './AboutComponent'
+import { Link } from 'react-router-dom'
+
+
 const Menu = () =>{
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return(
+  
     <Navbar sticky="top" id="navbar-black">
-        <Navbar.Brand id="brand-name" href="#home">shoe Shack</Navbar.Brand>
+        <Link className="navbar-brand" to="/" style={{'color':'white', 'text-transform':'uppercase','letterspacing':'0.1em','font-family':'Anton, sans-serif'}}>shoe Shack</Link>
             <Nav id="white-txt" className="ml-auto">
-                 <Nav.Link style={{color:"white", "text-transform":"","letter-spacing":'0.05em'}} className="mr-3" href="#home">Home</Nav.Link>
-                    <Nav.Link style={{color:"white", "text-transform":"","letter-spacing":'0.05em'}} className="mr-3" href="#features">About</Nav.Link>
-                        <Nav.Link style={{color:"white", "text-transform":"","letter-spacing":'0.05em'}} href="#pricing" onClick={handleShow}>Shop</Nav.Link>
+                 <Link to="/" style={{color:"white", "text-transform":"","letter-spacing":'0.05em'}} className="nav-link mr-3" activeClassName="active" href="#home">Home</Link>
+                    
+                      <Link to="/about-us" style={{color:"gray", "text-transform":"","letter-spacing":'0.05em'}} className="nav-link mr-3">About</Link>
+                    
+                    {/* <Link to="/about-us">AboutUs</Link> */}
+                        <Link className="nav-link" to="/shop" style={{color:"gray", "text-transform":"","letter-spacing":'0.05em'}} href="#pricing" onClick={handleShow}>Shop</Link>
         </Nav>
         <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title className="modal-title">Sign In</Modal.Title>
+          <Modal.Title className="modal-title">Sign In</Modal.Title>  
         </Modal.Header>
         <Modal.Body>
             <Form>
@@ -39,6 +47,7 @@ const Menu = () =>{
           </Button>
         </Modal.Footer>
       </Modal>
+      
     </Navbar> 
     
         )
