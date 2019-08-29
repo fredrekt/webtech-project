@@ -11,12 +11,23 @@ import Shop from './components/Shop'
 import About from './components/About'
 import Team from './components/Team'
 import HoursRendered from './components/HoursRendered'
+import AboutComponent from './components/AboutComponent'
+import HomeComponent from './components/HomeComponent'
+
+import {BrowserRouter, Switch ,Route} from 'react-router-dom'
 
 
 function App() {
   return (
+    <BrowserRouter>
+    
     <div className="App">
       <Menu/>
+      <Switch>
+        <Route path='/'exact component={HomeComponent} />
+        <Route path='/about-us/' component={AboutComponent}/>
+      </Switch>
+     
        {/* About Section Starts here
       Add to browser router - /About */}
 
@@ -28,12 +39,12 @@ function App() {
 
       {/* About Section Ends here */}
      
-      
+{/*       
       <Banner/>
       <Content/>
       <Features/>
       <Contact/>
-      <Clients />
+      <Clients /> */}
 
       {/*
         commented 50% done - add containers for the items (shoes)
@@ -46,6 +57,7 @@ function App() {
 
       <Footer/>
     </div>
+    </BrowserRouter>
   );
 }
 
