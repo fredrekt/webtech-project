@@ -7,6 +7,8 @@ import db from '../img/db-icon.png'
 import build from '../img/build.png'
 import secure from '../img/security.jpg'
 import cart from '../img/shop.png'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Popover from 'react-bootstrap/Popover'
 
 
 class Features extends Component{
@@ -43,7 +45,19 @@ class Features extends Component{
             <Container>
                 <h1 style={{'text-align':'center','margin-bottom':'3%','color':'black'}} className="header-txt">Features</h1>
                 <Row>
-                    <Col title="What is Database Oriented?" className="hover-item">
+                    <OverlayTrigger
+                    key='top'
+                    placement='top'
+                    overlay={
+                    <Popover id={`popover-positioned-$placement`}>
+                                        <Popover.Title as="h3"></Popover.Title>
+                                        <Popover.Content>
+                                            <strong>What is Database Oriented?</strong>
+                                        </Popover.Content>
+                                        </Popover>
+                    }
+                >
+                    <Col className="hover-item">
                     <a onClick={this.handleDbOrient} className="feature-choices" href="#hello">
                         <Container className="align-center">
                             <img src={db} alt="" className="img-feature"/>
@@ -51,7 +65,20 @@ class Features extends Component{
                         </Container>
                     </a>
                     </Col>
-                    <Col title="Data Security, what does it mean?" className="hover-item">
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                    key='top'
+                    placement='top'
+                    overlay={
+                    <Popover id={`popover-positioned-$placement`}>
+                                        <Popover.Title as="h3"></Popover.Title>
+                                        <Popover.Content>
+                                            <strong>Data Security, what does it mean?</strong>
+                                        </Popover.Content>
+                                        </Popover>
+                    }
+                >
+                    <Col className="hover-item">
                     <a onClick={this.handleDataSecurity}  className="feature-choices" href="#hello">
                         <Container className="align-center">
                             <img src={secure} alt="" className="img-feature"/>
@@ -59,7 +86,20 @@ class Features extends Component{
                         </Container>
                     </a>
                     </Col>
-                    <Col title="What is Cart System?" className="hover-item">
+                    </OverlayTrigger>
+                    <OverlayTrigger
+                    key='top'
+                    placement='top'
+                    overlay={
+                    <Popover id={`popover-positioned-$placement`}>
+                                        <Popover.Title as="h3"></Popover.Title>
+                                        <Popover.Content>
+                                            <strong>What is Cart System?</strong>
+                                        </Popover.Content>
+                                        </Popover>
+                    }
+                >
+                    <Col className="hover-item">
                     <a onClick={this.handleCartSys} className="feature-choices" href="#hello">
                         <Container className="align-center">
                             <img src={cart} alt="" className="img-feature"/>
@@ -67,6 +107,20 @@ class Features extends Component{
                         </Container>
                     </a>
                     </Col>
+                    </OverlayTrigger>
+
+                    <OverlayTrigger
+                    key='top'
+                    placement='top'
+                    overlay={
+                    <Popover id={`popover-positioned-$placement`}>
+                                        <Popover.Title as="h3"></Popover.Title>
+                                        <Popover.Content>
+                                            <strong>What is Cart System?</strong>
+                                        </Popover.Content>
+                                        </Popover>
+                    }
+                >
                     <Col title="Dynamic Web Application?" className="hover-item">
                     <a onClick={this.handleWebApp} className="feature-choices" href="#hello">
                         <Container className="align-center">
@@ -75,6 +129,7 @@ class Features extends Component{
                         </Container>
                     </a>
                     </Col>
+                </OverlayTrigger>
                 </Row>
                 {/* <Row>
                     <Col className="feature-name">Database Oriented</Col>
