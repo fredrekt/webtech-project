@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 // class HoursRendered extends Component{
 //     render(){
@@ -55,10 +56,16 @@ class HoursRendered extends Component {
 
             <Jumbotron className="clock-section">
                  <Container>
+                 <ScrollAnimation animateIn='bounceInUp'
+                    animateOut='bounceOutLeft'>
                      <h1 className="jumbotron-header">Project history</h1>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn='bounceInLeft'
+                animateOut='bounceOutLeft'>
                         <div className="clock-component">
                         <h1>{h % 12}:{(m < 10 ? '0' + m : m)}:{(s < 10 ? '0' + s : s)} {h < 12 ? 'am' : 'pm'}</h1>
                         </div>
+                </ScrollAnimation>
                         <OverlayTrigger
                                     trigger="hover"
                                     key="bottom"
@@ -72,7 +79,10 @@ class HoursRendered extends Component {
                                         </Popover>
                                     }
                                     >
-                            <h3 className="sub-clock-txt">19 hours rendered</h3>
+                <ScrollAnimation animateIn='bounceInRight'
+                animateOut='bounceOutRight'>
+                            <h3 className="sub-clock-txt">23 hours rendered</h3>
+                </ScrollAnimation>
                         </OverlayTrigger>
                  </Container>
             </Jumbotron>
