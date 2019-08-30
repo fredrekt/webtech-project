@@ -10,14 +10,19 @@ import github from '../img/github-icon.png'
 import fb from '../img/fb-icon.png'
 import twitter from '../img/twitter-icon.png'
 import gmail from '../img/gmail.jpg'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class Team extends Component{
     render(){
         return(
             <Container className="team-section">
+            <ScrollAnimation animateIn='bounceInLeft'
+            animateOut='bounceOutLeft'>
                 <h1 className="jumbotron-header">Our Team</h1>
+            </ScrollAnimation>
                 <Container className="team-members-section">
                     <Row>
+                    
                         <Col lg md xs={4}>
                             <OverlayTrigger
                                 trigger="hover"
@@ -32,6 +37,7 @@ class Team extends Component{
                                     </Popover>
                                 }
                                 >
+                        
                                 <img className="team-img" src={Dev1}/>
                                 </OverlayTrigger>
                                     <h4 className="team-name">Fredrick Garingo</h4>
