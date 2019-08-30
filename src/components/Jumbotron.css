@@ -23,3 +23,24 @@
       margin-left: 40%;
     }
 }
+/* BREADCRUMB for About.js */
+.breadcrumb-header{
+    font-family: Changa, sans-serif;
+    font-size: 80px;
+}
+.breadcrumb-container{
+    padding: 60px;
+    text-align: center;
+    color: white;
+    background-color: black
+}
+.active-bread{
+    color: gray;
+}
+.breadcrumb-link, a:hover{
+    text-decoration: none;
+}
+.breadcrumb-link{
+    color: white;
+}
+/* END OF BREADCRUMB FOR About.js */

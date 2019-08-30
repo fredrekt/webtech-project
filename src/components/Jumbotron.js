@@ -9,7 +9,7 @@ import Popover from 'react-bootstrap/Popover'
 import styled, { keyframes } from 'styled-components'
 import { bounce } from 'react-animations'
 
-import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const bounceAnimation = keyframes`${bounce}`
 
