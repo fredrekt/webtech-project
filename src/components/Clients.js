@@ -10,6 +10,8 @@ import ph from '../img/ph-logo.png'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const Clients = () =>{
     return(
         <Container>
@@ -25,8 +27,15 @@ const Clients = () =>{
                                         </Popover>
                     }
                 >
+                <ScrollAnimation 
+                    animateIn='bounce'
+                    animateOut='bounceOut'>
             <h1 style={{'color':'black','margin-top':'5%','margin-bottom':'5%'}} className="client-txt">Our Clients</h1>
+            </ScrollAnimation>
             </OverlayTrigger>
+            <ScrollAnimation 
+                    animateIn='bounceInRight'
+                    animateOut='bounceOutLeft'>
             <Row>
                 <Col className="align-center">
                 <OverlayTrigger
@@ -105,6 +114,7 @@ const Clients = () =>{
                     <h4 className="client-url"><a href="https://proj-gov.appspot.com/">proj-gov-online</a></h4>
                 </Col>
             </Row>
+            </ScrollAnimation>
         </Container>
     )
 }
