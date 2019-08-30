@@ -9,6 +9,7 @@ import secure from '../img/security.jpg'
 import cart from '../img/shop.png'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 class Features extends Component{
@@ -55,8 +56,13 @@ class Features extends Component{
                                         </Popover>
                     }
                 >
+                <ScrollAnimation animateIn='bounceInUp'
+                    animateOut='bounceOutLeft'>
                 <h1 style={{'text-align':'center','margin-bottom':'3%','color':'black'}} className="header-txt">Features</h1>
+                </ScrollAnimation>
                 </OverlayTrigger>
+                <ScrollAnimation animateIn='bounceInRight'
+                    animateOut='bounceOutLeft'>
                 <Row>
                     <OverlayTrigger
                     key='top'
@@ -144,6 +150,7 @@ class Features extends Component{
                     </Col>
                 </OverlayTrigger>
                 </Row>
+                </ScrollAnimation>
                 {/* <Row>
                     <Col className="feature-name">Database Oriented</Col>
                     <Col className="feature-name">Data Security</Col>
@@ -152,8 +159,14 @@ class Features extends Component{
                 </Row> */}
                 <Row style={{'margin-bottom':'5%'}}>
                     <Container>
+                    <ScrollAnimation animateIn='bounceInRight'
+                    animateOut='bounceOutLeft'>
                         <h1 className="feature-title">{this.state.header}</h1>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='bounceInLeft'
+                    animateOut='bounceOutRight'>
                         <p className="feature-content">{this.state.content}</p>
+                    </ScrollAnimation>
                     </Container>
                     {/* <Container> 
                         <h1 className="feature-title">Data Security</h1>
@@ -169,6 +182,7 @@ class Features extends Component{
                     </Container> */}
                 </Row>
             </Container>
+            
         )
     }
 } 
