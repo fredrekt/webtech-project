@@ -6,10 +6,16 @@ import React, {useState} from 'react'
 import Collapse from 'react-bootstrap/Collapse'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
+import styled, { keyframes } from 'styled-components'
+import { bounce } from 'react-animations'
 
+import ScrollAnimation from 'react-animate-on-scroll';
 
+const bounceAnimation = keyframes`${bounce}`
 
-
+const BouncyDiv = styled.div`
+  animation: 1s ${bounceAnimation}
+`;
 const Jumbo = () => {
     const readMore = "Read More"
     const readLess = "Read Less"
@@ -29,9 +35,11 @@ const Jumbo = () => {
                                     </Popover>
                 }
               >
-                      <h1 className="jumbotron-header">What is Shoe Shack?</h1>
+                    <ScrollAnimation animateIn='bounceInLeft'
+  animateOut='bounceOutLeft'>  <h1 className="jumbotron-header">What is Shoe Shack?</h1></ScrollAnimation>
               </OverlayTrigger>
-            
+              <ScrollAnimation animateIn='bounce'
+  animateOut='bounceOutLeft'>
             <p className="jumbotron-content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pellentesque in ante ac sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean blandit ullamcorper erat, ac egestas nulla imperdiet et. Phasellus vel interdum nibh. Quisque venenatis magna urna, eget mollis orci ornare vehicula. Vivamus eu nulla eget dui sollicitudin cursus ac nec ante. Phasellus vitae ultrices nulla, sit amet sodales mauris. Vivamus elementum eleifend iaculis. Phasellus suscipit egestas tortor, id aliquam risus consectetur sit amet.
     
@@ -39,7 +47,9 @@ const Jumbo = () => {
     
     Praesent eget quam vitae sem tempus sodales. Donec nec ante nibh. Nulla varius sit amet neque a dignissim. Ut mattis dolor vel sodales malesuada. Curabitur bibendum felis in lectus tempus, eu consequat libero cursus. Etiam dui mi, congue vitae nibh vel, convallis auctor est. Phasellus commodo dignissim mi in varius. Ut elementum faucibus lectus. Etiam ut odio non purus euismod egestas non ut massa. In dictum lacus non quam egestas hendrerit. Phasellus sodales id lectus et fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus pellentesque sapien a dolor volutpat venenatis sed sit amet nulla. Sed congue erat nisl, eget sodales ligula semper in. Aliquam erat volutpat.
             </p>
+            </ScrollAnimation>
             <Collapse in={open}>
+              <BouncyDiv>
                 <div className="collapse-content">
                 Aliquam tincidunt lacinia orci, sit amet consequat dolor vulputate vitae. Pellentesque finibus risus neque, ultricies egestas sem facilisis id. Sed auctor tellus in molestie rhoncus. Donec vulputate id ex ac eleifend. Donec ullamcorper, quam vel tempor sollicitudin, mi elit scelerisque lacus, a mattis risus erat at felis. Nunc condimentum odio et sapien ullamcorper, et porttitor nulla pharetra. Nulla vestibulum felis at metus sagittis commodo. Vivamus tempus nibh et lorem cursus auctor. Donec volutpat neque et sem rutrum faucibus eget ut leo. Nunc sagittis turpis ut nulla ultricies, eget condimentum odio condimentum. Proin ullamcorper, mauris dapibus dictum feugiat, mauris magna interdum nunc, et interdum tellus lectus et enim. Vestibulum hendrerit feugiat ligula, sit amet pulvinar metus blandit vel. Fusce neque arcu, euismod vel sem a, pretium egestas nisi. Vivamus blandit est neque, non tincidunt metus imperdiet venenatis. Proin at auctor tellus, at scelerisque justo.
 
@@ -50,6 +60,7 @@ Nam nec fermentum est. In ullamcorper risus at ex tempor, eget venenatis ipsum v
 
 Nam sit amet ex id ipsum scelerisque sagittis. Aliquam id est id libero volutpat efficitur non et enim. Fusce et sagittis lacus, in accumsan nulla. Quisque placerat, erat vitae aliquet viverra, elit eros imperdiet dolor, blandit maximus nisi metus eget nisi. Proin tempor nisl pharetra, vestibulum erat eu, ultricies nulla. Donec sit amet dui ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc nec sodales diam, quis rutrum sapien. Curabitur dignissim massa vitae velit congue faucibus.
                 </div>
+              </BouncyDiv>
             </Collapse>
             <Button aria-controls="collapse-content" className="button-indent"  onClick={() => setOpen(!open)} aria-expanded={open} variant="outline-dark" size="lg">{readMore}</Button>
             
