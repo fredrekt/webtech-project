@@ -3,7 +3,10 @@ import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Popover from 'react-bootstrap/Popover'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import { Link } from 'react-router-dom'
 
+import ScrollAnimation from 'react-animate-on-scroll'
 
 class About extends Component {
     render(){
@@ -17,11 +20,26 @@ class About extends Component {
           );
         return(
             <div>
+                <div className="breadcrumb-container">
+                    <ScrollAnimation animateIn='bounceInLeft'
+                    animateOut='bounceOutLeft'>
+                    <h1 className="breadcrumb-header">About Us</h1>
+                    </ScrollAnimation>
+                    <ScrollAnimation animateIn='bounceInRight'
+                    animateOut='bounceOutRight'>
+                    <p><Link className="breadcrumb-link" to="/">Home </Link>/<span className="active-bread disabled"> About</span></p>
+                    </ScrollAnimation>
+                </div>
                 <Jumbotron>
                     <Container>
                     <OverlayTrigger trigger="hover" placement="top" overlay={popover}>
-                        <h1 className='text-center jumbotron-header'>About Us</h1>
+                    <ScrollAnimation animateIn='bounceInUp'
+                    animateOut='bounceOutRight'>
+                        <h1 className='text-center jumbotron-header'>About Shoe Shack</h1>
+                    </ScrollAnimation>
                     </OverlayTrigger>
+                    <ScrollAnimation animateIn='bounceInRight'
+                    animateOut='bounceOutUp'>
                             <Container>
                                 <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris commodo bibendum egestas. Duis ullamcorper velit id sem posuere porta. Donec vel massa velit. Integer libero eros, tempor eget suscipit convallis, scelerisque vel enim. Donec convallis risus sit amet massa dapibus, ac tristique lacus vehicula. Vestibulum vehicula mauris at vehicula bibendum. Etiam sed mattis neque. Integer et mauris lorem. Sed arcu felis, tincidunt quis quam quis, posuere lobortis ante. Phasellus sit amet fringilla enim, vel ultricies purus. Ut non vestibulum risus. Nulla non eros massa. Morbi tempus ac neque ut gravida. Fusce et justo et dui mollis egestas id eu quam. Cras vitae ante consequat, suscipit velit eget, faucibus mauris. Quisque hendrerit sit amet nisi a congue.
 
@@ -44,6 +62,7 @@ In at justo eget libero efficitur venenatis. Curabitur euismod nisl vitae felis 
 Donec at dui vitae justo ultrices ornare. Morbi maximus eleifend est, non sollicitudin velit elementum sed. Maecenas dapibus, est nec feugiat rutrum, velit ante accumsan risus, et ullamcorper neque dolor vitae nulla. Aenean faucibus, orci non bibendum feugiat, arcu justo varius magna, nec accumsan metus arcu non lorem. Aenean porttitor consectetur sapien elementum ornare. Nullam cursus eget nulla eget gravida. Sed risus dolor, mollis a gravida vel, aliquet eu dolor. Nunc in egestas odio. Fusce eget orci erat.
                                 </p>
                             </Container>
+                            </ScrollAnimation>
                     </Container>
                 </Jumbotron>
      
