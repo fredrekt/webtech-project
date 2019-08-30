@@ -10,12 +10,16 @@ import Bootstrap from '../img/bootstrap-icon.png'
 import ReactIcon from '../img/react-icon.png'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const ProjectTools = () =>{
     return(
         <div className="container-mt-3">
             <Container>
+            <ScrollAnimation animateIn='bounceInRight'
+            animateOut='bounceOutRight'> 
                 <h1 style={{'margin-top':'-10%', 'margin-bottom':'8%'}} className="jumbotron-header">Project Development Tools</h1>
+            </ScrollAnimation>
                 <Container>
                     <Row className="dev-tools-1">
                     <OverlayTrigger
@@ -32,7 +36,10 @@ const ProjectTools = () =>{
                         }
                         >
                         <Col lg={4}>
+                        <ScrollAnimation animateIn='bounceInUp'
+                        animateOut='bounceOutLeft'> 
                             <img className="asd" src={Github} rounded/>
+                        </ScrollAnimation>
                         </Col> 
                         </OverlayTrigger>
                         <OverlayTrigger
@@ -49,7 +56,10 @@ const ProjectTools = () =>{
                         }
                         >
                         <Col lg={4}>
+                        <ScrollAnimation animateIn='bounceInUp'
+                        animateOut='bounceOutLeft'> 
                             <img className="asd" src={Netlify} rounded/>
+                        </ScrollAnimation>
                         </Col>  
                         </OverlayTrigger> 
                         <OverlayTrigger
@@ -66,7 +76,10 @@ const ProjectTools = () =>{
                         }
                         >         
                         <Col lg={4}>
+                        <ScrollAnimation animateIn='bounceInUp'
+                        animateOut='bounceOutLeft'> 
                             <img className="asd" src={Stackoverflow} rounded/>
+                        </ScrollAnimation>
                         </Col>
                         </OverlayTrigger>          
                     </Row>
@@ -85,7 +98,10 @@ const ProjectTools = () =>{
                         }
                         >    
                         <Col lg={4}>
+                        <ScrollAnimation animateIn='bounceInDown'
+                        animateOut='bounceOutRight'> 
                             <img className="img-tools-2" src={Bootstrap} rounded/>
+                        </ScrollAnimation>
                         </Col>  
                         </OverlayTrigger>
                         <OverlayTrigger
@@ -102,7 +118,10 @@ const ProjectTools = () =>{
                         }
                         >    
                         <Col lg={4}>
+                        <ScrollAnimation animateIn='bounceInDown'
+                        animateOut='bounceOutRight'> 
                             <img className="img-tools-2" src={ReactIcon} rounded/>
+                        </ScrollAnimation>
                         </Col> 
                         </OverlayTrigger>
                         <OverlayTrigger
@@ -119,7 +138,10 @@ const ProjectTools = () =>{
                         }
                         >  
                         <Col lg={4}>
+                        <ScrollAnimation animateIn='bounceInDown'
+                        animateOut='bounceOutRight'> 
                             <img className="img-tools-2" src={Vscode} rounded/>
+                        </ScrollAnimation>
                         </Col>   
                         </OverlayTrigger> 
                     </Row>
