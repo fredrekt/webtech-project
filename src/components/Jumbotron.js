@@ -51,7 +51,7 @@ Nam nec fermentum est. In ullamcorper risus at ex tempor, eget venenatis ipsum v
 Nam sit amet ex id ipsum scelerisque sagittis. Aliquam id est id libero volutpat efficitur non et enim. Fusce et sagittis lacus, in accumsan nulla. Quisque placerat, erat vitae aliquet viverra, elit eros imperdiet dolor, blandit maximus nisi metus eget nisi. Proin tempor nisl pharetra, vestibulum erat eu, ultricies nulla. Donec sit amet dui ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc nec sodales diam, quis rutrum sapien. Curabitur dignissim massa vitae velit congue faucibus.
                 </div>
             </Collapse>
-            <Button aria-controls="collapse-content" className="button-indent"  onClick={() => setOpen(!open)} aria-expanded={open} variant="dark" size="lg">{readMore}</Button>
+            <Button aria-controls="collapse-content" className="button-indent"  onClick={() => setOpen(!open)} aria-expanded={open} variant="outline-dark" size="lg">{readMore}</Button>
             
             
             
